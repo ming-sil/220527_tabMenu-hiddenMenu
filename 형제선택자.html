@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형제선택자</title>
+
+    <style>
+
+        /* *형제선택자 사용 시 주의사항
+        =>반드시 하나의 기준이 있어야 함 */
+
+        h1+h2{
+            color: red;
+        }
+        /* =>인접 형제 관계 선택자 */
+
+        h1~h3{color: blue;}
+        /* =>형제 관계 선택자
+        =>기준이 되는 선택자 뒷쪽 어딘가에 있는 형제를 선택할 때 사용 */
+
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>첫번째 엘리먼트</h1>
+    <h2>두번째 엘리먼트</h2>
+    <h3>세번째 엘리먼트</h3>
+    <h3>네번째 엘리먼트</h3>
+    <h4>다섯번째 엘리먼트</h4>
+
+</body>
+</html>
